@@ -4,7 +4,7 @@ angular
 .constant('$titlePattern', 'active: {active} - waiting: {waiting} - stopped: {stopped} — {name}')
 .constant('$pageSize', 11)         // number of downloads shown before pagination kicks in
 .constant('$authconf', {           // default authentication configuration, never fill it in case the webui is hosted in public IP as it can be compromised
-  host: location.protocol.startsWith('http') ? location.hostname : '192.168.27.1',
+  host: '192.168.27.1',
   path: '/jsonrpc',
   port: 6800,
   encrypt: false,
